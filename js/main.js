@@ -1,16 +1,3 @@
-// //Détection de jQuery
-
-// // $(document).ready(function () {
-// //     alert('Jquery est bien chargé');
-// // });
-
-// // jQuery slideToggle function
-// jQuery(document).ready(() => {
-//   $("#title-rules").click(function () {
-//     $("#rules").slideToggle("slow");
-//   });
-// });
-
 // *********************************
 // *** Déclaration des variables ***
 // *********************************
@@ -42,23 +29,6 @@ const mutedText = document.getElementById('mute-text');
 
 init();
 document.querySelector('.dice').style.display = 'block';  // affiche le dé au lancement du jeu
-
-
-
-/**********************************/
-/***Choisir le nom des joueurs ***/
-/*********************************/
-
-
-document.querySelector('.btn-enter').addEventListener('click', function() {
-  document.querySelector('.player-names').style.display = 'none';
-  var player1Name = document.getElementById("player-name-1").value;
-  var player2Name = document.getElementById("player-name-2").value;
-  document.querySelector('#name-0').textContent = player1Name;
-  document.querySelector('#name-1').textContent = player2Name;
-
-});
-
 
 
 // ****************************************
@@ -251,3 +221,16 @@ window.onclick = function(event) {
 }
 
 
+/**********************************/
+/***Choisir le nom des joueurs ***/
+/*********************************/
+
+
+document.querySelector('.btn-enter').addEventListener('click', function() {
+  document.querySelector('.player-names').style.display = 'none';
+  var player1Name = document.getElementById("player-name-1").value;
+  var player2Name = document.getElementById("player-name-2").value;
+  document.querySelector('#name-0').textContent = player1Name;
+  document.querySelector('#name-1').textContent = player2Name;
+
+});
