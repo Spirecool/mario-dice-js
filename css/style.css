@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/********************/
+/* header and title */
+/********************/
+
+/* header {
+  background-color: lightgray;
+} */
+
+.play-till {
+  width: 3rem;
+  border-radius: 3px;
+  text-align: center;
+
+}
+
+header h1 {
+  padding: 14px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px lightgray;
+  max-width: 300px;
+}
+
+/********************/
+/****** RULES *******/
+/* *****************/
+
+
+#title-rules{
+  border:none;
+  font-weight:bold;
+  padding:8px;
+  font-size:1.3rem;
+  text-transform: uppercase;
+}
+
+
