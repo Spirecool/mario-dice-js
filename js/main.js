@@ -1,3 +1,4 @@
+
 // *********************************
 // *** Déclaration des variables ***
 // *********************************
@@ -165,29 +166,27 @@ function init() {
     
 }
 
-
 // ****************************************
 // *** Événénement MUTE = couper le son ***
 // ****************************************
 
 
 muted.addEventListener('click', () => {
-    if(mutedText.innerText === 'Désactiver le son :'){
-        mutedText.innerText = 'Activer le son :';
-        muted.innerHTML = '&#128266;';
-        for(let track of audio){
-          track.muted = true;
-        }
-  
-    } else if(mutedText.innerText === 'Activer le son :') {
-        mutedText.innerText = 'Désactiver le son :';
-        muted.innerHTML = '&#128263;';
-        for(let track of audio){
-          track.muted = false;
-        }
-    }
-  });
+  if(mutedText.innerText === 'Désactiver le son :'){
+      mutedText.innerText = 'Activer le son :';
+      muted.innerHTML = '&#128266;';
+      for(let track of audio){
+        track.muted = true;
+      }
 
+  } else if(mutedText.innerText === 'Activer le son :') {
+      mutedText.innerText = 'Désactiver le son :';
+      muted.innerHTML = '&#128263;';
+      for(let track of audio){
+        track.muted = false;
+      }
+  }
+});
 
 /**************************************/
 /*** MODAL - Trigger/Ouvre le Modal ***/
