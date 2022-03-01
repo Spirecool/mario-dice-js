@@ -262,4 +262,64 @@ header h1 {
     clear: both;
   }
   
+
+/****************/
+/* Bouton MUTE  */
+/****************/
+
+
+#mute-text{
+    font-size:1.1rem;
+    font-style:italic;
+    padding:1.5rem 0;
+  }
+  .sound-text span{
+    font-size:25px;
+    margin-left:7px;
+    padding-top:20px;
+    cursor:pointer;
+    font-style:normal;
+  }
+  
+  /*********/
+  /* MODAL */
+  /*********/
+  
+  
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    color: tomato;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
   
