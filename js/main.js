@@ -137,3 +137,36 @@ function nextPlayer() {
 }
 
 document.querySelector(".btn-new").addEventListener("click", init);
+
+
+// ************************************************
+// *** Fonction "Démarrer une nouvelle partie") ***
+// ************************************************
+
+
+function init() {
+  scores = [0, 0]; // reset les scores à 0
+  activePlayer = 0; //O est le premier joueur et 1 est le second
+  roundScore = 0;
+  gamePlay = true;
+
+  // audioNewGame.play(); A REMETTRE EN PROD !
+
+  document.querySelector(".dice").style.display = "block"; // affiche le dé au lancement nouvelle partie
+  // Reset des scores : global
+  document.getElementById("score-0").textContent = "0";
+  document.getElementById("score-1").textContent = "0";
+  document.getElementById("round-0").textContent = "0";
+  document.getElementById("round-1").textContent = "0";
+
+  //Reset les noms des joueurs (supprime "winner")
+  document.getElementById("name-0").textContent = "Player 1";
+  document.getElementById("name-1").textContent = "Player 2";
+
+  //reset la propriété classList (sans le "winner")
+  document.querySelector(".player-0-panel").classList.remove("winner");
+  document.querySelector(".player-1-panel").classList.remove("winner");
+  document.querySelector(".player-0-panel").classList.remove("active");
+  document.querySelector(".player-1-panel").classList.remove("active");
+  document.querySelector(".player-0-panel").classList.add("active");
+}
