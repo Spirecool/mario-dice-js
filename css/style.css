@@ -120,3 +120,112 @@ header h1 {
   
   
 
+
+/*****************/
+/* BLOCK BUTTONS STYLE */
+/*****************/
+
+
+.btn-roll {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 9px #2980b9;
+  }
+  
+  .btn-roll:hover {
+    transform: translateY(3px);
+    box-shadow: 0 6px #2980b9;
+  }
+  
+  .btn-roll:active {
+    transform: translateY(7px);
+    box-shadow: 0 2px #3498db;
+  }
+  
+  .btn-hold {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 9px #c0392b;
+  }
+  
+  .btn-hold:hover {
+    transform: translateY(3px);
+    box-shadow: 0 6px #c0392b;
+  }
+  
+  .btn-hold:active {
+    transform: translateY(7px);
+    box-shadow: 0 2px #e74c3c;
+  }
+  
+  
+  /* BUTTON NEW GAME */
+  
+  
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+    color: #000
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  
