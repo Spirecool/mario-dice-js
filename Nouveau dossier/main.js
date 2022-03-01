@@ -138,9 +138,11 @@ function nextPlayer() {
 
 document.querySelector(".btn-new").addEventListener("click", init);
 
+
 // ************************************************
 // *** Fonction "Démarrer une nouvelle partie") ***
 // ************************************************
+
 
 function init() {
   scores = [0, 0]; // reset les scores à 0
@@ -169,22 +171,3 @@ function init() {
   document.querySelector(".player-0-panel").classList.add("active");
 }
 
-// ****************************************
-// *** Événénement MUTE = couper le son ***
-// ****************************************
-
-muted.addEventListener("click", () => {
-  if (mutedText.innerText === "Désactiver le son :") {
-    mutedText.innerText = "Activer le son :";
-    muted.innerHTML = "&#128266;";
-    for (let track of audio) {
-      track.muted = true;
-    }
-  } else if (mutedText.innerText === "Activer le son :") {
-    mutedText.innerText = "Désactiver le son :";
-    muted.innerHTML = "&#128263;";
-    for (let track of audio) {
-      track.muted = false;
-    }
-  }
-});
