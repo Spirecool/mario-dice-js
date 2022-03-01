@@ -39,3 +39,38 @@ document.querySelector(".btn-enter").addEventListener("click", function () {
   document.querySelector("#name-0").textContent = player1Name;
   document.querySelector("#name-1").textContent = player2Name;
 });
+
+
+
+
+// ****************************************
+// *** Bouton lancer de dé (Roll Dice) ****
+// ****************************************
+
+
+document.querySelector('.btn-roll').addEventListener('click', function() {
+    if(gamePlay) { // si le jeu est en cours
+        audioDiceShaking.play();
+        // Nombre aléatoire
+        let dice = Math.floor(Math.random() * 6) + 1;
+        let diceDOM = document.querySelector('.dice'); // affiche l'image du dé selon le résultat du random
+        // Affiche l'image du dé
+        diceDOM.style.display = 'block';
+        // Modifie l'image de la face du dé
+        
+        diceDOM.src = `images/face-${dice}.png`; // autre écriture : diceDOM.src = 'images/face-' + dice + '.png';
+        //si nombre est différent de 1
+        if (dice !== 1) {
+            roundScore += dice; //obtenir le score du tour à partir des lancers de dés
+            document.querySelector('#round-' + activePlayer).textContent = roundScore;
+
+        //Sinon ...
+        } else {
+            
+            document.querySelector('.dice');
+            audioLost.play();
+            nextPlayer(); // appelle la fonction du joueur suivant
+        }
+    }    
+});
+
