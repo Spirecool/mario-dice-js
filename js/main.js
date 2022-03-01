@@ -74,3 +74,18 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     }    
 });
 
+
+
+// *********************************
+// *** Fonction sécuriser (hold) ***
+// *********************************
+
+
+document.querySelector('.btn-hold').addEventListener('click', function() {
+    if (gamePlay) { // si le jeu est en cours
+        scores[activePlayer] += roundScore; // ajoute le score courant (ROUND) au score global
+        audioHold.play();
+  
+        document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+  
+  
