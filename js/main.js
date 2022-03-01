@@ -16,7 +16,7 @@ const audioDiceShaking = new Audio('audio/dice-roll-sound.mp3'); // son au lance
 const audioLost = new Audio ('audio/lost-sound.wav');
 const audioHold = new Audio ('audio/hold-sound.wav');
 const audioNewGame = new Audio ('audio/new-game-sound.wav');
-const audio = [audioWin, audioDiceShaking, audioLost, audioNewGame];
+const audio = [audioWin, audioDiceShaking, audioLost, audioLost, audioNewGame];
 
 // Déclaration des constantes du DOM pour le bouton MUTE
 const muted = document.getElementById('mute');
@@ -172,15 +172,15 @@ function init() {
 
 
 muted.addEventListener('click', () => {
-  if(mutedText.innerText === 'Désactiver le son :'){
-      mutedText.innerText = 'Activer le son :';
-      muted.innerHTML = '&#128266;';
+  if(mutedText.innerText === 'Mute the sound :'){
+      mutedText.innerText = 'Unmute the sound :';
+      muted.innerHTML = '&#128266';
       for(let track of audio){
         track.muted = true;
       }
 
-  } else if(mutedText.innerText === 'Activer le son :') {
-      mutedText.innerText = 'Désactiver le son :';
+  } else if(mutedText.innerText === 'Unmute the sound :') {
+      mutedText.innerText = 'Mute the sound :';
       muted.innerHTML = '&#128263;';
       for(let track of audio){
         track.muted = false;
