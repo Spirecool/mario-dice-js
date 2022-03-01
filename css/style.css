@@ -55,3 +55,68 @@ header h1 {
 }
 
 
+
+/**************************/
+/******* PLAYERS PANELS ***/
+/**************************/
+
+
+.player-1-panel , .player-0-panel {
+ 
+    padding:20px 5px;
+    text-align:center;
+    font-size:1.3rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .player-total-box {
+    background-color: blue;
+    color: whitesmoke;
+  }
+  
+  
+  .img-player {
+    width: 300px;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .img-player {
+      width:65px;
+    }
+  }
+  
+  
+  /********************/
+  /*MAIN BUTTONS BLOCK*/
+  /********************/
+  
+  
+  .dice {
+    width: 80px;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .dice {
+      width: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .buttons-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  
+  .global-player-0 {
+    background-color: #E50316;
+  }
+  
+  .global-player-1 {
+    background-color:#37AF00;
+  }
+  
+  
+
