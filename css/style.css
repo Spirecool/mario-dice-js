@@ -227,5 +227,39 @@ header h1 {
   border-radius: 10px;
 }
 
+
+
+/*****************/
+/* CLASS "ACTIVE" */
+/*****************/
+
+
+.active { 
+    border: solid 3px  #2980b9;
+    box-shadow: 5px 7px 15px -1px #2980b9;
+    -webkit-box-shadow: 5px 7px 15px -1px #2980b9; 
+  }
+  
+  .active .player-name { font-weight: 800; }
+  
+  .active .player-name::after {
+      content: "\2022";
+      font-size: 20px;
+      color: #2980b9;
+  }
+  
+  #name-0{
+    color: #E50316;
+  }
+  
+  #name-1 {
+    color: #37AF00;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   
   
