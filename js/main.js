@@ -233,3 +233,6 @@ document.querySelector('.btn-enter').addEventListener('click', function() {
   document.querySelector('#name-1').textContent = player2Name;
 
 });
+
+
+

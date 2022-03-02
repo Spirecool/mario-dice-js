@@ -20,14 +20,14 @@
 
   <body>
     <header
-      class="d-flex flex-row flex-sm-column justify-content-center align-items-center"
+      class="d-flex flex-row flex-sm-column justify-content-around align-items-center pt-2"
     >
       <h1>Mario Dice !</h1>
       
 
 <!-- MODAL JS DES REGLES - Trigger/ouvre le Modal-->
     
-      <button id="myBtn">Rules</button>
+      <button id="myBtn" class="rules-button">Rules</button>
 
       <!-- Le Modal -->
 
@@ -77,12 +77,12 @@
   
 <!-- FIN DES REGLES -->
 
-<div class="d-flex justify-content-center py-4">
+<div class="d-flex justify-content-center py-2">
     
   
 <!-- PREMIER A  -->
 
-  <label>Choose the Final Score : <input type="text" name="Premier à" class="play-till">
+  <label>Choose the Final Score : <input type="text" name="Premier à" onclick="myFunction()" id="numb" class="play-till">
   </div>
   
 <!-- DÉBUT DU MAIN -->
@@ -193,7 +193,7 @@
 <!-- FOOTER-->
 
     <footer>
-      <p class="text-center pb-2">Copyright ©2022- Jérôme OLLIVIER - Tous droits réservés</p>
+      <p class="text-center pb-2">Copyright ©2022- Jérôme OLLIVIER - All rights Reserved</p>
     </footer>
 
 
