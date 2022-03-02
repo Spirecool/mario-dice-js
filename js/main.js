@@ -144,7 +144,7 @@ function init() {
     roundScore = 0;
     gamePlay = true;
     
-    // audioNewGame.play(); A REMETTRE EN PROD !
+    audioNewGame.play();
 
     document.querySelector('.dice').style.display = 'block'; // affiche le dé au lancement nouvelle partie
     // Reset des scores : global
