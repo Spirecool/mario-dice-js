@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index,follow" />
-    <meta name="description" content="Dice Game" />
+    <meta name="description" content="Dice game, allowing 2 players to play. The first player to reach 100 wins!" />
 
     <!-- Bootstrap Library -->
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,19 +15,19 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title> Mario Dice !</title>
+    <title> Mario Dice : first to 100 points !</title>
   </head>
 
   <body>
     <header
-      class="d-flex flex-column justify-content-center align-items-center"
+      class="d-flex flex-row flex-sm-column justify-content-center align-items-center"
     >
       <h1>Mario Dice !</h1>
       
 
 <!-- MODAL JS DES REGLES - Trigger/ouvre le Modal-->
-
-      <button id="myBtn">Règles du jeu</button>
+    
+      <button id="myBtn">Rules</button>
 
       <!-- Le Modal -->
 
@@ -38,35 +37,28 @@
           
           <span class="close">&times;</span>
           <h2 id="title-rules">Règles du jeu</h2>
-          <p>
-            Le jeu comprend <strong>2 joueurs</strong> sur un seul et même
-            écran.
+          <p>           
+            The game includes <strong>2 players</strong> on a single screen.
           </p>
           <p>
-            Chaque joueur possède un
-            <strong>scrore temporaire</strong> (ROUND) et un
-            <strong>score global</strong>(GLOBAL).
+            Each player has a <strong>temporary score</strong> (ROUND) and an <strong>overall score</strong> (GLOBAL)
           </p>
           <p>
-            À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer
-            un dé autant de fois qu'il le souhaite. Le résultat d’un lancer est
-            ajouté au ROUND.
+            At each turn, the player has his ROUND initialized to 0 and can roll a die as many times as he wishes. The result of a throw is added to the ROUND.
           </p>
-          <p>Lors de son tour, le joueur peut décider à tout moment de:</p>
+          <p>During his turn, the player can decide at any time to:</p>
           <ul>
             <li>
-              Cliquer sur l’option “Hold”, qui permet d’envoyer les points du
-              ROUND vers le GLOBAL. Ce sera alors le tour de l’autre joueur.
+              Click on the “Hold” option, which sends the points of the ROUND to the GLOBAL. It will then be the other player's turn.
             </li>
             <li>
-              Lancer le dé. S’il obtient un 1, son score ROUND est perdu et
-              c’est la fin de son tour.
+              Roll the die. If he rolls a “1”, his ROUND score is lost and his turn ends.
             </li>
           </ul>
           <p>
-            Le premier joueur qui atteint les <strong></strong> 100 points sur
-            global gagne le jeu.
+            The first player reaches <strong>100 points</strong> in the GLOBAL wins the game.
           </p>
+          <p>At the start of the game, players <strong>can decide the maximum to reach</strong> in the GLOBAL to win the game, by entering a number in the field "Choose the Final Score"</p>
         </div> 
       </div>
 
@@ -95,7 +87,7 @@
   
 <!-- DÉBUT DU MAIN -->
 
-<main class="container d-flex align-items-center flex-column">
+<main class="container d-flex flex-row flex-sm-column align-items-center">
       <!-- <div class="d-flex justify-content-center align-items-center"> -->
 
      <div class="row align-items-center justify-content-center">
