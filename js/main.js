@@ -16,7 +16,7 @@ const audioDiceShaking = new Audio('audio/dice-roll-sound.mp3'); // son au lance
 const audioLost = new Audio ('audio/lost-sound.wav');
 const audioHold = new Audio ('audio/hold-sound.wav');
 const audioNewGame = new Audio ('audio/new-game-sound.wav');
-const audio = [audioWin, audioDiceShaking, audioLost, audioLost, audioNewGame];
+const audio = [audioWin, audioDiceShaking, audioLost, audioHold, audioNewGame];
 
 // Déclaration des constantes du DOM pour le bouton MUTE
 const muted = document.getElementById('mute');
